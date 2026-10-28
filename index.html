@@ -15,16 +15,18 @@
 
 <h2>Google 계정으로 하는 일</h2>
 <ul>
-  <li>사용자가 직접 로그인한 Google 계정의 <b>캘린더 목록과 일정을 읽기만</b> 한다
-    (<code>https://www.googleapis.com/auth/calendar.readonly</code>).</li>
-  <li>일정을 만들거나 고치거나 지우지 않는다.</li>
+  <li>사용자가 직접 로그인한 Google 계정의 <b>캘린더 목록을 읽고</b>
+    (<code>calendar.calendarlist.readonly</code>), <b>일정을 읽고 쓴다</b> (<code>calendar.events</code>).</li>
+  <li>일정은 사용자가 화면에서 직접 만들거나 고치거나 지운 것만 바뀐다. 스스로 일정을 바꾸지 않는다.</li>
+  <li>캘린더 자체를 만들거나 지우거나 공유 설정을 바꾸지 않는다.</li>
   <li>읽은 내용은 사용자 본인의 컴퓨터에서 화면에 보여 주는 데만 쓴다.</li>
 </ul>
 
 <h2>English</h2>
 <p>research-dashboard is a personal dashboard that its owner runs on their own computer. With the owner's consent it reads
-(read-only) the calendar list and events of the Google accounts the owner signs in with, and shows them on that computer.
-It is not a public service and does not create, modify or delete calendar data.</p>
+the calendar list and events of the Google accounts the owner signs in with, and shows them on that computer.
+It also lets the owner create, edit and delete events from that screen; it never changes calendar data on its own,
+and it cannot create, delete or re-share calendars. It is not a public service.</p>
 
 <footer>문의 / Contact: <a href="https://github.com/thwan11/research-dashboard-app/issues">GitHub issues</a></footer>
 </main></body>
